@@ -1,0 +1,12 @@
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\bin\Debug\Car_Showroom.mdf
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\bin\Debug\Car_Showroom_log.ldf
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\bin\Debug\Lesson4_ADOnet.exe.config
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\bin\Debug\Lesson4_ADOnet.exe
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\bin\Debug\Lesson4_ADOnet.pdb
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.Form1.resources
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.Properties.Resources.resources
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.exe
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.pdb
+C:\Users\User\source\repos\Lesson4_ADOnet\Lesson4_ADOnet\obj\Debug\Lesson4_ADOnet.csprojAssemblyReference.cache

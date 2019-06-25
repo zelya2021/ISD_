@@ -1,0 +1,16 @@
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\bin\Debug\ColorPicket.dll
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\bin\Debug\ColorPicket.pdb
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.UserControl1.resources
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csproj.GenerateResource.cache
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.dll
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.pdb
+C:\Users\student\Desktop\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\bin\Debug\ColorPicket.dll
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\bin\Debug\ColorPicket.pdb
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.UserControl1.resources
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.dll
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\ColorPicket\obj\Debug\ColorPicket.pdb

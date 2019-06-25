@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\bin\Debug\ColorPicket.dll
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\bin\Debug\ColorPicket.pdb
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\LBwithUC.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\LBwithUC.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\LBwithUC.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\LBwithUC.csproj.CopyComplete
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\User\Desktop\Новая папка\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
