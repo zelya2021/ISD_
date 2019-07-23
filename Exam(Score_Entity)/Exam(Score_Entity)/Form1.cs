@@ -24,8 +24,6 @@ namespace Exam_Score_Entity_
             CB_Name();
             CB_Price();
             ListBooks();
-            //Editing form = new Editing();
-            //form.ShowDialog();
         }
         private void CB_Categories()
         {
@@ -111,21 +109,21 @@ namespace Exam_Score_Entity_
                 decimal price = Convert.ToDecimal(cb_price.SelectedItem);
                 using (DefaultContext ctx = new DefaultContext())
                 {
-                    //var book = ctx.Books.ToList().Where(b => b.Price== price)/* as Book*/;
-
-                    //var categories = ctx.Categories.ToList()
-                    //    .Where(cat => cat.Books.Any(b => b.Price == price));
-
-                    //dataGridView.Rows.Clear();
-                    //foreach (var cat in categories)
-                    //{
-                    //    dataGridView.Rows.Add(book.Name, book.Autor, book.Price, cat.Name);
-                    //}
-                    ;
-                    ;
+                    Book book = null;
+                    var books = ctx.Books.Include(b=>b.Categories).ToList();
+                    foreach (var item in books)
+                    {
+                        if (item.Price == price) { book = item; }
+                    }
+                    var categories = ctx.Categories.ToList()
+                       .Where(cat => cat.Books.Any(b => b.Name == book.Name));
+                    foreach (var item in categories)
+                    {
+                        dataGridView.Rows.Add(book.Name, book.Autor, book.Price, item.Name);
+                    }
                 }
             }
-        }//---
+        }
         private void Btn_addTObasket_Click(object sender, EventArgs e)
         {
             if (dataGridView.SelectedCells.Count > 0)
@@ -160,6 +158,12 @@ namespace Exam_Score_Entity_
         {
             Admin form = new Admin();
             form.ShowDialog();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            cb_category.Refresh();
+            cb_name.Refresh();
+            cb_price.Refresh();
         }
     }
 }
