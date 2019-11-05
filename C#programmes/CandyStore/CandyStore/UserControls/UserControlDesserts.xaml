@@ -1,0 +1,76 @@
+﻿<UserControl  x:Class="CandyStore.Forms.UserControlDesserts"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="650">
+
+
+    <materialDesign:Flipper>
+
+        <materialDesign:Flipper.FrontContent>
+            <Grid HorizontalAlignment="Left" Width="650" >
+                <ListBox x:Name="lbDesserts" ItemsSource="{Binding Desserts}" VirtualizingPanel.ScrollUnit="Pixel" RenderTransformOrigin="0.711,0.484">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+                                    <WrapPanel>
+                                        <Image Source="{Binding Image}" Stretch="UniformToFill" Height="140" Width="196" />
+                                        <StackPanel Grid.Row="1" Margin="8 24 8 0" >
+                                            <TextBlock  FontWeight="Bold" Text="{Binding Name}" FontSize="20" FontFamily="Segoe Print"/>
+                                            <TextBlock VerticalAlignment="Center" Text="{Binding Category}" FontSize="16" FontFamily="Frank Ruehl CLM BoldOblique" FontStyle="Italic" Foreground="#FF444251"/>
+                                            <TextBlock  Width="300" TextWrapping="Wrap" VerticalAlignment="Center" Text="{Binding Description}" FontSize="14" />
+                                            <WrapPanel>
+                                                <TextBlock  Text="{Binding Price}" HorizontalAlignment="Right" FontFamily="Frank Ruehl CLM BoldOblique" FontSize="20"/>
+                                                <materialDesign:PackIcon Kind="Cash" VerticalAlignment="Center" Height="35" Width="35" HorizontalAlignment="Right"/>
+                                            </WrapPanel>
+                                            <Button x:Name="btn_Flipper" Style="{StaticResource MaterialDesignFlatButton}"
+                                               Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                               Margin="0 4 0 0" Click="Btn_Flipper_Click">Изменить/Добавить/Удалить</Button>
+                                        </StackPanel>
+                                    </WrapPanel>
+                                </materialDesign:TransitioningContent>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </materialDesign:Flipper.FrontContent>
+
+        <materialDesign:Flipper.BackContent>
+            <Grid Height="524" Width="667" DataContext="{Binding ElementName=lbDesserts, Path=SelectedItem}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="214*"/>
+                    <ColumnDefinition Width="453*"/>
+                </Grid.ColumnDefinitions>
+                <materialDesign:ColorZone Mode="PrimaryLight" Padding="6">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource MaterialDesignToolForegroundButton}"
+                                Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                HorizontalAlignment="Left">
+                            <materialDesign:PackIcon Kind="ArrowLeft" HorizontalAlignment="Right" />
+                        </Button>
+                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                </materialDesign:ColorZone>
+
+                <Image x:Name="tb_image" Source="{Binding Image}" Stretch="Fill" Height="140" VerticalAlignment="Top"  Margin="0,77,10.4,0" MouseDown="Tb_image_MouseDown"/>
+                <StackPanel Margin="35.6,10,38.2,224" Grid.Column="1">
+                    <TextBox x:Name="tb_name" Text="{Binding Name}" Height="54"  materialDesign:HintAssist.Hint="Название" materialDesign:HintAssist.IsFloating="True" FontSize="20" FontFamily="Segoe Print"/>
+                    <TextBox x:Name="tb_category"  Text="{Binding Category}" Height="54"  materialDesign:HintAssist.Hint="Категория" materialDesign:HintAssist.IsFloating="True" FontSize="16" FontFamily="Frank Ruehl CLM BoldOblique" FontStyle="Italic" Foreground="#FF444251"/>
+                    <TextBox x:Name="tb_description" Text="{Binding Description}" Height="54"  materialDesign:HintAssist.Hint="Описание" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" />
+                    <TextBox x:Name="tb_price" Text="{Binding Price}" Height="54"  materialDesign:HintAssist.Hint="Цена" materialDesign:HintAssist.IsFloating="True" FontFamily="Frank Ruehl CLM BoldOblique" FontSize="20"/>
+                    <WrapPanel>
+                        <Button x:Name="btn_delete" Content="Удалить" Width="91" Click="Btn_delete_Click"/>
+                        <Button x:Name="btn_add" Content="Добавить" Width="95" Click="Btn_add_Click"/>
+                    </WrapPanel>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Flipper.BackContent>
+
+    </materialDesign:Flipper>
+</UserControl>
